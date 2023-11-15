@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42969081787B820EBD00DF53 /* Pods_ChallengeBCP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE074C1E76FC27D451669C9 /* Pods_ChallengeBCP.framework */; };
 		CEA39F2A2B05871D007CBC9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA39F292B05871D007CBC9A /* AppDelegate.swift */; };
 		CEA39F2C2B05871D007CBC9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA39F2B2B05871D007CBC9A /* SceneDelegate.swift */; };
 		CEA39F2E2B05871D007CBC9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA39F2D2B05871D007CBC9A /* ViewController.swift */; };
@@ -54,6 +55,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		403C93B73D1C31432008011E /* Pods-ChallengeBCP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeBCP.release.xcconfig"; path = "Target Support Files/Pods-ChallengeBCP/Pods-ChallengeBCP.release.xcconfig"; sourceTree = "<group>"; };
+		5DD68F01FB259534A743E77B /* Pods-ChallengeBCP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeBCP.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeBCP/Pods-ChallengeBCP.debug.xcconfig"; sourceTree = "<group>"; };
+		6DE074C1E76FC27D451669C9 /* Pods_ChallengeBCP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeBCP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA39F262B05871D007CBC9A /* ChallengeBCP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeBCP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA39F292B05871D007CBC9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEA39F2B2B05871D007CBC9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42969081787B820EBD00DF53 /* Pods_ChallengeBCP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62D9EBCB6466358D630173EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DD68F01FB259534A743E77B /* Pods-ChallengeBCP.debug.xcconfig */,
+				403C93B73D1C31432008011E /* Pods-ChallengeBCP.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CEA39F1D2B05871D007CBC9A = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +133,8 @@
 				CEA39F3F2B05871F007CBC9A /* ChallengeBCPTests */,
 				CEA39F492B05871F007CBC9A /* ChallengeBCPUITests */,
 				CEA39F272B05871D007CBC9A /* Products */,
+				62D9EBCB6466358D630173EB /* Pods */,
+				D90C68AC12184C37EF2C6EB1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -285,6 +301,14 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		D90C68AC12184C37EF2C6EB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DE074C1E76FC27D451669C9 /* Pods_ChallengeBCP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -292,9 +316,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEA39F502B05871F007CBC9A /* Build configuration list for PBXNativeTarget "ChallengeBCP" */;
 			buildPhases = (
+				DF3BACC57890BC375835A3E5 /* [CP] Check Pods Manifest.lock */,
 				CEA39F222B05871D007CBC9A /* Sources */,
 				CEA39F232B05871D007CBC9A /* Frameworks */,
 				CEA39F242B05871D007CBC9A /* Resources */,
+				943BA1E5E63C1712D52AC124 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -414,6 +440,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		943BA1E5E63C1712D52AC124 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengeBCP/Pods-ChallengeBCP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengeBCP/Pods-ChallengeBCP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChallengeBCP/Pods-ChallengeBCP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF3BACC57890BC375835A3E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChallengeBCP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CEA39F222B05871D007CBC9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -529,7 +597,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -544,7 +613,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -592,7 +661,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -601,7 +671,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -613,6 +683,7 @@
 		};
 		CEA39F512B05871F007CBC9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DD68F01FB259534A743E77B /* Pods-ChallengeBCP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -626,6 +697,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -641,6 +713,7 @@
 		};
 		CEA39F522B05871F007CBC9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 403C93B73D1C31432008011E /* Pods-ChallengeBCP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -654,6 +727,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -676,7 +750,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z9KGY278GC;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yenniferhurtado.ChallengeBCPTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -696,7 +770,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z9KGY278GC;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yenniferhurtado.ChallengeBCPTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
