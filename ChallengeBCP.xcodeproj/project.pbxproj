@@ -16,6 +16,24 @@
 		CEA39F412B05871F007CBC9A /* ChallengeBCPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA39F402B05871F007CBC9A /* ChallengeBCPTests.swift */; };
 		CEA39F4B2B05871F007CBC9A /* ChallengeBCPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA39F4A2B05871F007CBC9A /* ChallengeBCPUITests.swift */; };
 		CEA39F4D2B05871F007CBC9A /* ChallengeBCPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA39F4C2B05871F007CBC9A /* ChallengeBCPUITestsLaunchTests.swift */; };
+		CEA39F682B0588CA007CBC9A /* LoginInteractorDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA39F622B0588CA007CBC9A /* LoginInteractorDependencies.swift */; };
+		CEA39F692B0588CA007CBC9A /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA39F632B0588CA007CBC9A /* LoginPresenter.swift */; };
+		CEA39F6A2B0588CA007CBC9A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA39F642B0588CA007CBC9A /* LoginViewController.swift */; };
+		CEA39F6B2B0588CA007CBC9A /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA39F652B0588CA007CBC9A /* LoginInteractor.swift */; };
+		CEA39F6C2B0588CA007CBC9A /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA39F662B0588CA007CBC9A /* LoginViewController.xib */; };
+		CEA39F6D2B0588CA007CBC9A /* LoginWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA39F672B0588CA007CBC9A /* LoginWireFrame.swift */; };
+		CEA39F742B0588DE007CBC9A /* HomeInteractorDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA39F6E2B0588DE007CBC9A /* HomeInteractorDependencies.swift */; };
+		CEA39F752B0588DE007CBC9A /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA39F6F2B0588DE007CBC9A /* HomePresenter.swift */; };
+		CEA39F762B0588DE007CBC9A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA39F702B0588DE007CBC9A /* HomeViewController.swift */; };
+		CEA39F772B0588DE007CBC9A /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA39F712B0588DE007CBC9A /* HomeInteractor.swift */; };
+		CEA39F782B0588DE007CBC9A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA39F722B0588DE007CBC9A /* HomeViewController.xib */; };
+		CEA39F792B0588DE007CBC9A /* HomeWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA39F732B0588DE007CBC9A /* HomeWireFrame.swift */; };
+		CEA39F8D2B05890C007CBC9A /* CurrencyInteractorDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA39F872B05890C007CBC9A /* CurrencyInteractorDependencies.swift */; };
+		CEA39F8E2B05890C007CBC9A /* CurrencyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA39F882B05890C007CBC9A /* CurrencyPresenter.swift */; };
+		CEA39F8F2B05890C007CBC9A /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA39F892B05890C007CBC9A /* CurrencyViewController.swift */; };
+		CEA39F902B05890C007CBC9A /* CurrencyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA39F8A2B05890C007CBC9A /* CurrencyInteractor.swift */; };
+		CEA39F912B05890C007CBC9A /* CurrencyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA39F8B2B05890C007CBC9A /* CurrencyViewController.xib */; };
+		CEA39F922B05890C007CBC9A /* CurrencyWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA39F8C2B05890C007CBC9A /* CurrencyWireFrame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +67,24 @@
 		CEA39F462B05871F007CBC9A /* ChallengeBCPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeBCPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA39F4A2B05871F007CBC9A /* ChallengeBCPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeBCPUITests.swift; sourceTree = "<group>"; };
 		CEA39F4C2B05871F007CBC9A /* ChallengeBCPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeBCPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CEA39F622B0588CA007CBC9A /* LoginInteractorDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorDependencies.swift; sourceTree = "<group>"; };
+		CEA39F632B0588CA007CBC9A /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		CEA39F642B0588CA007CBC9A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CEA39F652B0588CA007CBC9A /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		CEA39F662B0588CA007CBC9A /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		CEA39F672B0588CA007CBC9A /* LoginWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireFrame.swift; sourceTree = "<group>"; };
+		CEA39F6E2B0588DE007CBC9A /* HomeInteractorDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorDependencies.swift; sourceTree = "<group>"; };
+		CEA39F6F2B0588DE007CBC9A /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		CEA39F702B0588DE007CBC9A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CEA39F712B0588DE007CBC9A /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		CEA39F722B0588DE007CBC9A /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		CEA39F732B0588DE007CBC9A /* HomeWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireFrame.swift; sourceTree = "<group>"; };
+		CEA39F872B05890C007CBC9A /* CurrencyInteractorDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyInteractorDependencies.swift; sourceTree = "<group>"; };
+		CEA39F882B05890C007CBC9A /* CurrencyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPresenter.swift; sourceTree = "<group>"; };
+		CEA39F892B05890C007CBC9A /* CurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
+		CEA39F8A2B05890C007CBC9A /* CurrencyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyInteractor.swift; sourceTree = "<group>"; };
+		CEA39F8B2B05890C007CBC9A /* CurrencyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyViewController.xib; sourceTree = "<group>"; };
+		CEA39F8C2B05890C007CBC9A /* CurrencyWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyWireFrame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +135,10 @@
 		CEA39F282B05871D007CBC9A /* ChallengeBCP */ = {
 			isa = PBXGroup;
 			children = (
+				CEA39F5A2B05887C007CBC9A /* Core */,
+				CEA39F592B058874007CBC9A /* Infraestructure */,
+				CEA39F602B0588A8007CBC9A /* Extension */,
+				CEA39F5B2B058880007CBC9A /* Delivery */,
 				CEA39F292B05871D007CBC9A /* AppDelegate.swift */,
 				CEA39F2B2B05871D007CBC9A /* SceneDelegate.swift */,
 				CEA39F2D2B05871D007CBC9A /* ViewController.swift */,
@@ -125,6 +165,124 @@
 				CEA39F4C2B05871F007CBC9A /* ChallengeBCPUITestsLaunchTests.swift */,
 			);
 			path = ChallengeBCPUITests;
+			sourceTree = "<group>";
+		};
+		CEA39F592B058874007CBC9A /* Infraestructure */ = {
+			isa = PBXGroup;
+			children = (
+				CEA39F972B05894C007CBC9A /* Networking */,
+			);
+			path = Infraestructure;
+			sourceTree = "<group>";
+		};
+		CEA39F5A2B05887C007CBC9A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CEA39F962B058943007CBC9A /* BaseClasses */,
+				CEA39F952B058937007CBC9A /* Environment */,
+				CEA39F942B058932007CBC9A /* Localizables */,
+				CEA39F932B05892D007CBC9A /* Alert */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CEA39F5B2B058880007CBC9A /* Delivery */ = {
+			isa = PBXGroup;
+			children = (
+				CEA39F5C2B058885007CBC9A /* Flows */,
+			);
+			path = Delivery;
+			sourceTree = "<group>";
+		};
+		CEA39F5C2B058885007CBC9A /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				CEA39F5D2B05888A007CBC9A /* Splash */,
+				CEA39F5E2B05888E007CBC9A /* Home */,
+				CEA39F862B058901007CBC9A /* Currency */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		CEA39F5D2B05888A007CBC9A /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				CEA39F622B0588CA007CBC9A /* LoginInteractorDependencies.swift */,
+				CEA39F632B0588CA007CBC9A /* LoginPresenter.swift */,
+				CEA39F642B0588CA007CBC9A /* LoginViewController.swift */,
+				CEA39F652B0588CA007CBC9A /* LoginInteractor.swift */,
+				CEA39F662B0588CA007CBC9A /* LoginViewController.xib */,
+				CEA39F672B0588CA007CBC9A /* LoginWireFrame.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		CEA39F5E2B05888E007CBC9A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CEA39F6E2B0588DE007CBC9A /* HomeInteractorDependencies.swift */,
+				CEA39F6F2B0588DE007CBC9A /* HomePresenter.swift */,
+				CEA39F702B0588DE007CBC9A /* HomeViewController.swift */,
+				CEA39F712B0588DE007CBC9A /* HomeInteractor.swift */,
+				CEA39F722B0588DE007CBC9A /* HomeViewController.xib */,
+				CEA39F732B0588DE007CBC9A /* HomeWireFrame.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CEA39F602B0588A8007CBC9A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CEA39F862B058901007CBC9A /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				CEA39F872B05890C007CBC9A /* CurrencyInteractorDependencies.swift */,
+				CEA39F882B05890C007CBC9A /* CurrencyPresenter.swift */,
+				CEA39F892B05890C007CBC9A /* CurrencyViewController.swift */,
+				CEA39F8A2B05890C007CBC9A /* CurrencyInteractor.swift */,
+				CEA39F8B2B05890C007CBC9A /* CurrencyViewController.xib */,
+				CEA39F8C2B05890C007CBC9A /* CurrencyWireFrame.swift */,
+			);
+			path = Currency;
+			sourceTree = "<group>";
+		};
+		CEA39F932B05892D007CBC9A /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		CEA39F942B058932007CBC9A /* Localizables */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Localizables;
+			sourceTree = "<group>";
+		};
+		CEA39F952B058937007CBC9A /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		CEA39F962B058943007CBC9A /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		CEA39F972B05894C007CBC9A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +389,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA39F6C2B0588CA007CBC9A /* LoginViewController.xib in Resources */,
 				CEA39F362B05871F007CBC9A /* LaunchScreen.storyboard in Resources */,
+				CEA39F912B05890C007CBC9A /* CurrencyViewController.xib in Resources */,
+				CEA39F782B0588DE007CBC9A /* HomeViewController.xib in Resources */,
 				CEA39F332B05871F007CBC9A /* Assets.xcassets in Resources */,
 				CEA39F312B05871D007CBC9A /* Main.storyboard in Resources */,
 			);
@@ -258,9 +419,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA39F6A2B0588CA007CBC9A /* LoginViewController.swift in Sources */,
 				CEA39F2E2B05871D007CBC9A /* ViewController.swift in Sources */,
+				CEA39F792B0588DE007CBC9A /* HomeWireFrame.swift in Sources */,
+				CEA39F742B0588DE007CBC9A /* HomeInteractorDependencies.swift in Sources */,
+				CEA39F8E2B05890C007CBC9A /* CurrencyPresenter.swift in Sources */,
+				CEA39F772B0588DE007CBC9A /* HomeInteractor.swift in Sources */,
+				CEA39F902B05890C007CBC9A /* CurrencyInteractor.swift in Sources */,
+				CEA39F752B0588DE007CBC9A /* HomePresenter.swift in Sources */,
+				CEA39F6D2B0588CA007CBC9A /* LoginWireFrame.swift in Sources */,
+				CEA39F8F2B05890C007CBC9A /* CurrencyViewController.swift in Sources */,
+				CEA39F922B05890C007CBC9A /* CurrencyWireFrame.swift in Sources */,
+				CEA39F6B2B0588CA007CBC9A /* LoginInteractor.swift in Sources */,
+				CEA39F682B0588CA007CBC9A /* LoginInteractorDependencies.swift in Sources */,
+				CEA39F762B0588DE007CBC9A /* HomeViewController.swift in Sources */,
 				CEA39F2A2B05871D007CBC9A /* AppDelegate.swift in Sources */,
+				CEA39F8D2B05890C007CBC9A /* CurrencyInteractorDependencies.swift in Sources */,
 				CEA39F2C2B05871D007CBC9A /* SceneDelegate.swift in Sources */,
+				CEA39F692B0588CA007CBC9A /* LoginPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
