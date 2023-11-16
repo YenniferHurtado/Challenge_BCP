@@ -1,0 +1,20 @@
+PODS:
+  - MBProgressHUD (1.2.0)
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - MBProgressHUD
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - MBProgressHUD
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: 88ef712dd26c1a7344b2890ca264dca988c6d6b7
+
+COCOAPODS: 1.12.1
