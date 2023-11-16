@@ -1,5 +1,5 @@
 //
-//  LoginWireFrame.swift
+//  SplashWireFrame.swift
 //  ChallengeBCP
 //
 //  Created by Yennifer Hurtado Arce on 15/11/23.

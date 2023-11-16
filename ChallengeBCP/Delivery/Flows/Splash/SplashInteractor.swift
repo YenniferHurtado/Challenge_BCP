@@ -1,5 +1,5 @@
 //
-//  LoginInteractor.swift
+//  SplashInteractor.swift
 //  ChallengeBCP
 //
 //  Created by Yennifer Hurtado Arce on 15/11/23.
