@@ -9,10 +9,7 @@
 /* Begin PBXBuildFile section */
 		42969081787B820EBD00DF53 /* Pods_ChallengeBCP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE074C1E76FC27D451669C9 /* Pods_ChallengeBCP.framework */; };
 		CEA016EE2B05943100567E83 /* UIVIewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA016ED2B05943100567E83 /* UIVIewController+Extension.swift */; };
-		CEA016F62B05944D00567E83 /* SplashInteractorDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA016F02B05944D00567E83 /* SplashInteractorDependencies.swift */; };
-		CEA016F72B05944D00567E83 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA016F12B05944D00567E83 /* SplashPresenter.swift */; };
 		CEA016F82B05944D00567E83 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA016F22B05944D00567E83 /* SplashViewController.swift */; };
-		CEA016F92B05944D00567E83 /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA016F32B05944D00567E83 /* SplashInteractor.swift */; };
 		CEA016FA2B05944D00567E83 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA016F42B05944D00567E83 /* SplashViewController.xib */; };
 		CEA016FB2B05944D00567E83 /* SplashWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA016F52B05944D00567E83 /* SplashWireFrame.swift */; };
 		CEA39F2A2B05871D007CBC9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA39F292B05871D007CBC9A /* AppDelegate.swift */; };
@@ -60,10 +57,7 @@
 		5DD68F01FB259534A743E77B /* Pods-ChallengeBCP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeBCP.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeBCP/Pods-ChallengeBCP.debug.xcconfig"; sourceTree = "<group>"; };
 		6DE074C1E76FC27D451669C9 /* Pods_ChallengeBCP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeBCP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA016ED2B05943100567E83 /* UIVIewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController+Extension.swift"; sourceTree = "<group>"; };
-		CEA016F02B05944D00567E83 /* SplashInteractorDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractorDependencies.swift; sourceTree = "<group>"; };
-		CEA016F12B05944D00567E83 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
 		CEA016F22B05944D00567E83 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
-		CEA016F32B05944D00567E83 /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
 		CEA016F42B05944D00567E83 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		CEA016F52B05944D00567E83 /* SplashWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashWireFrame.swift; sourceTree = "<group>"; };
 		CEA39F262B05871D007CBC9A /* ChallengeBCP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeBCP.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,11 +133,8 @@
 		CEA016EF2B05944200567E83 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				CEA016FD2B05997800567E83 /* WireFrame */,
 				CEA016FC2B05945500567E83 /* View */,
-				CEA016F02B05944D00567E83 /* SplashInteractorDependencies.swift */,
-				CEA016F12B05944D00567E83 /* SplashPresenter.swift */,
-				CEA016F32B05944D00567E83 /* SplashInteractor.swift */,
-				CEA016F52B05944D00567E83 /* SplashWireFrame.swift */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -155,6 +146,14 @@
 				CEA016F22B05944D00567E83 /* SplashViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CEA016FD2B05997800567E83 /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				CEA016F52B05944D00567E83 /* SplashWireFrame.swift */,
+			);
+			path = WireFrame;
 			sourceTree = "<group>";
 		};
 		CEA39F1D2B05871D007CBC9A = {
@@ -507,10 +506,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEA39F2E2B05871D007CBC9A /* ViewController.swift in Sources */,
-				CEA016F62B05944D00567E83 /* SplashInteractorDependencies.swift in Sources */,
 				CEA39F792B0588DE007CBC9A /* HomeWireFrame.swift in Sources */,
 				CEA016F82B05944D00567E83 /* SplashViewController.swift in Sources */,
-				CEA016F72B05944D00567E83 /* SplashPresenter.swift in Sources */,
 				CEA39F742B0588DE007CBC9A /* HomeInteractorDependencies.swift in Sources */,
 				CEA39F8E2B05890C007CBC9A /* CurrencyPresenter.swift in Sources */,
 				CEA39F772B0588DE007CBC9A /* HomeInteractor.swift in Sources */,
@@ -520,7 +517,6 @@
 				CEA016EE2B05943100567E83 /* UIVIewController+Extension.swift in Sources */,
 				CEA39F922B05890C007CBC9A /* CurrencyWireFrame.swift in Sources */,
 				CEA016FB2B05944D00567E83 /* SplashWireFrame.swift in Sources */,
-				CEA016F92B05944D00567E83 /* SplashInteractor.swift in Sources */,
 				CEA39F762B0588DE007CBC9A /* HomeViewController.swift in Sources */,
 				CEA39F2A2B05871D007CBC9A /* AppDelegate.swift in Sources */,
 				CEA39F8D2B05890C007CBC9A /* CurrencyInteractorDependencies.swift in Sources */,

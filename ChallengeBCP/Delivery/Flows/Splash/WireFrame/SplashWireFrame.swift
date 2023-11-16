@@ -16,10 +16,7 @@ protocol SplashWireFrameProtocol {
 struct SplashWireFrame: SplashWireFrameProtocol {
     static func makeSplashView() -> UIViewController {
         
-        let interactorDependencies = SplashInteractorDependencies()
-        let interactor = SplashInteractor(dependencies: interactorDependencies)
-        let presenter = SplashPresenter(interactor: interactor)
-        let view = SplashViewController(presenter: presenter)
+        let view = SplashViewController()
         
         return view
     }

@@ -10,11 +10,8 @@
 import UIKit
 
 class SplashViewController: UIViewController {
-    
-    private var presenter: SplashPresenter
-    
-    init(presenter: SplashPresenter) {
-        self.presenter = presenter
+        
+    init() {
         super.init(nibName: String(describing: type(of: self)), bundle: nil)
     }
     
