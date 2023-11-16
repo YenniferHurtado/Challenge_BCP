@@ -21,12 +21,12 @@ class SplashViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        showHud()
+//        showHud()
     }
     
     // Simulate show home
     override func viewDidAppear(_ animated: Bool) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             let controller = HomeWireFrame.makeHomeView()
             controller.modalPresentationStyle = .fullScreen
             self.present(controller, animated: false)
