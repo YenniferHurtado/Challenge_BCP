@@ -12,6 +12,8 @@ Estas capas son Delivery, Domain (Core) e Infrastructure. Cada una de estas capa
 
 ## Unit test 
 Se agregaron Unit Test a la capa de Interactor:
+
+
 <img width="312" alt="Captura de pantalla 2023-11-17 a la(s) 10 57 36" src="https://github.com/YenniferHurtado/Challenge_BCP/assets/44207529/d57a27cc-8282-438c-894f-1003535b6c5a">
 
 ## Vista 
