@@ -24,7 +24,8 @@ class HomeViewController: UIViewController {
     
     private var presenter: HomePresenter
     private var isDataSuccess: Bool = false
-    
+    private var isConversionToUSD: Bool = false
+
     let titlesButton = ["Dólares", "Soles"]
 
     init(presenter: HomePresenter) {
@@ -35,6 +36,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setTitlesButton()
+        isConversionToUSD.toggle()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -48,7 +50,8 @@ class HomeViewController: UIViewController {
     
     @IBAction func didTapStartOperation(_ sender: Any) {
         presenter.convertCurreny(sendText: sendTextfield.text,
-                                 receiveText: &receiveTextfield.text)
+                                 receiveText: &receiveTextfield.text, 
+                                 isConversionToUSD: isConversionToUSD)
     }
     
     @IBAction func didTapArrowButton(_ sender: Any) {
@@ -97,11 +100,13 @@ extension HomeViewController {
             
             firstCurrencyButton.setTitle(titlesButton[1], for: .normal) //PEN
             secondCurrencyButton.setTitle(titlesButton[0], for: .normal) //USD
+            isConversionToUSD.toggle()
             
         } else {
             
             firstCurrencyButton.setTitle(titlesButton[0], for: .normal) //USD
             secondCurrencyButton.setTitle(titlesButton[1], for: .normal) //PEN
+            isConversionToUSD.toggle()
         }
     }
 }

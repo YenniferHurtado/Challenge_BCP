@@ -57,17 +57,21 @@ final class HomePresenter: HomePresenterProtocol, ObservableObject {
         }
     }
     
-    func convertCurreny(sendText: String?, receiveText: inout String?) {
+    func convertCurreny(sendText: String?, receiveText: inout String?, isConversionToUSD: Bool) {
         
         if let amountText = sendText,
            let amount = Double(amountText),
            amount >= 0 {
             
-            let ratePENtoUSD = penRate / usdRate
-            let result = amount * ratePENtoUSD
-            
+            var result: Double
+            if !isConversionToUSD {
+                // PEN to USD
+                result = amount / (penRate / usdRate)
+            } else {
+                // USD to PEN
+                result = amount * (penRate / usdRate)
+            }
             receiveText = String(format: "%.2f", result)
-            
         } else {
             showError()
         }
