@@ -14,20 +14,27 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var sendView: UIView!
     @IBOutlet weak var receiveView: UIView!
     
-    @IBOutlet weak var usdButton: UIButton!
-    @IBOutlet weak var penButton: UIButton!
-        
+    @IBOutlet weak var firstCurrencyButton: UIButton!
+    @IBOutlet weak var secondCurrencyButton: UIButton!
+    
     @IBOutlet weak var receiveTextfield: UITextField!
     @IBOutlet weak var sendTextfield: UITextField!
     
     @IBOutlet weak var resultLabel: UILabel!
     
     private var presenter: HomePresenter
-    private var isDataSuccess: Bool =  false
+    private var isDataSuccess: Bool = false
     
+    let titlesButton = ["Dólares", "Soles"]
+
     init(presenter: HomePresenter) {
         self.presenter = presenter
         super.init(nibName: String(describing: type(of: self)), bundle: nil)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setTitlesButton()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -39,11 +46,14 @@ class HomeViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    @IBAction func diidTapChangeCurrency(_ sender: Any) {
+    @IBAction func didTapStartOperation(_ sender: Any) {
         presenter.convertCurreny(sendText: sendTextfield.text,
                                  receiveText: &receiveTextfield.text)
     }
-
+    
+    @IBAction func didTapArrowButton(_ sender: Any) {
+        changeTitleNameOfButtons()
+    }
 }
 
 //MARK: FUNCTIONS
@@ -72,3 +82,26 @@ extension HomeViewController {
     }
 }
 
+//MARK: SETUP UI
+
+extension HomeViewController {
+    
+    func setTitlesButton() {
+        firstCurrencyButton.setTitle(titlesButton[0], for: .normal) //USD
+        secondCurrencyButton.setTitle(titlesButton[1], for: .normal) //PEN
+    }
+    
+    func changeTitleNameOfButtons() {
+        if firstCurrencyButton.titleLabel?.text == titlesButton[0] &&
+           secondCurrencyButton.titleLabel?.text == titlesButton[1]{
+            
+            firstCurrencyButton.setTitle(titlesButton[1], for: .normal) //PEN
+            secondCurrencyButton.setTitle(titlesButton[0], for: .normal) //USD
+            
+        } else {
+            
+            firstCurrencyButton.setTitle(titlesButton[0], for: .normal) //USD
+            secondCurrencyButton.setTitle(titlesButton[1], for: .normal) //PEN
+        }
+    }
+}

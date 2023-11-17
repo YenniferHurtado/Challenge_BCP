@@ -12,13 +12,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewControllerViewController.swift">
             <connections>
-                <outlet property="penButton" destination="Jwo-b5-gpX" id="tsK-GP-Zc7"/>
+                <outlet property="firstCurrencyButton" destination="HQm-Mj-scI" id="8Zh-bH-QBV"/>
                 <outlet property="receiveTextfield" destination="zaE-fB-bQY" id="Jhe-yW-GzH"/>
                 <outlet property="receiveView" destination="CxQ-CZ-KYe" id="Cqy-VD-dal"/>
                 <outlet property="resultLabel" destination="oHI-PG-DoR" id="c3h-cO-wgx"/>
+                <outlet property="secondCurrencyButton" destination="Jwo-b5-gpX" id="uXT-DK-Xdy"/>
                 <outlet property="sendTextfield" destination="lav-Il-9JX" id="lux-DV-qCx"/>
                 <outlet property="sendView" destination="roL-Tl-TJo" id="Tft-Z7-O9T"/>
-                <outlet property="usdButton" destination="HQm-Mj-scI" id="twI-ea-Zob"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -129,7 +129,7 @@
                         <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="35"/>
                     </buttonConfiguration>
                     <connections>
-                        <action selector="didTapChangeCurrency:" destination="-1" eventType="touchUpInside" id="iaZ-pw-ICE"/>
+                        <action selector="didTapArrowButton:" destination="-1" eventType="touchUpInside" id="hV5-eh-NiY"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNa-Gx-RGq">
@@ -144,7 +144,7 @@
                         <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                     </buttonConfiguration>
                     <connections>
-                        <action selector="diidTapChangeCurrency:" destination="-1" eventType="touchUpInside" id="9sa-HZ-DW4"/>
+                        <action selector="didTapStartOperation:" destination="-1" eventType="touchUpInside" id="9wH-wW-BRt"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHI-PG-DoR">
