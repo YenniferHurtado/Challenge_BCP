@@ -11,8 +11,6 @@ enum Feed {
     case listRates
 }
 
-let api_key = "e4129947a0ee3ef5e8513ac524cf017c"
-
 extension Feed: Endpoint {
         
     var httpMethod: RequestMethod {

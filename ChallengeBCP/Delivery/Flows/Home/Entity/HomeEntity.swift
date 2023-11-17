@@ -7,8 +7,10 @@
 
 import Foundation
 
-struct HomeEntity: Codable {
+struct HomeEntity: Decodable {
     var success: Bool
+    var timestamp: Int
+    var base: String
+    var date: String
     let rates: [String: Double]
 }
-

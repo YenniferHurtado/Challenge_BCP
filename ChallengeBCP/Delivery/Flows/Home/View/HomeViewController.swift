@@ -19,6 +19,7 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var receiveTextfield: UITextField!
     @IBOutlet weak var sendTextfield: UITextField!
+    @IBOutlet weak var arrowCircleButton: UIButton!
     
     @IBOutlet weak var resultLabel: UILabel!
     
@@ -26,6 +27,8 @@ class HomeViewController: UIViewController {
     private var isDataSuccess: Bool = false
     private var isConversionToUSD: Bool = false
 
+    var longPressGesture: UILongPressGestureRecognizer!
+    var longPressTimer: Timer?
     let titlesButton = ["Dólares", "Soles"]
 
     init(presenter: HomePresenter) {
@@ -37,6 +40,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         setTitlesButton()
         isConversionToUSD.toggle()
+        longPressArrowCircleButton()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -88,6 +92,18 @@ extension HomeViewController {
 //MARK: SETUP UI
 
 extension HomeViewController {
+    
+    func longPressArrowCircleButton() {
+        
+        longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(longPress))
+        longPressGesture.minimumPressDuration = 0.5
+        arrowCircleButton.addGestureRecognizer(longPressGesture)
+    }
+    
+    @objc func longPress() {
+        let controller = ListCurrencyWireFrame.makeListCurrencyView()
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
     
     func setTitlesButton() {
         firstCurrencyButton.setTitle(titlesButton[0], for: .normal) //USD

@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewControllerViewController.swift">
             <connections>
+                <outlet property="arrowCircleButton" destination="dla-XM-Vkn" id="b9T-Hl-jKm"/>
                 <outlet property="firstCurrencyButton" destination="HQm-Mj-scI" id="8Zh-bH-QBV"/>
                 <outlet property="receiveTextfield" destination="zaE-fB-bQY" id="Jhe-yW-GzH"/>
                 <outlet property="receiveView" destination="CxQ-CZ-KYe" id="Cqy-VD-dal"/>

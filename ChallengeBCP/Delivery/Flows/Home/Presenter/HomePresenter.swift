@@ -12,6 +12,10 @@ import Combine
 
 protocol HomePresenterProtocol {
     func listedRates(completion: @escaping (Bool) -> Void)
+    func convertCurreny(sendText: String?, receiveText: inout String?, isConversionToUSD: Bool)
+    func showUSDrates(isDataSuccess: Bool) -> (String, String)
+    func showError()
+
     var usdRate: Double { get set }
     var penRate: Double { get set }
 
@@ -48,8 +52,8 @@ final class HomePresenter: HomePresenterProtocol, ObservableObject {
                     self.usdRate = usdRate
                     self.penRate = penRate
                 }
-
                 completion(success.success)
+                
             case .failure(let failure):
                 self.error = failure
                 completion(false)
@@ -58,7 +62,6 @@ final class HomePresenter: HomePresenterProtocol, ObservableObject {
     }
     
     func convertCurreny(sendText: String?, receiveText: inout String?, isConversionToUSD: Bool) {
-        
         if let amountText = sendText,
            let amount = Double(amountText),
            amount >= 0 {
@@ -78,24 +81,18 @@ final class HomePresenter: HomePresenterProtocol, ObservableObject {
     }
     
     func showUSDrates(isDataSuccess: Bool) -> (String, String) {
-        
         var buy = ""
         var sell = ""
 
         if isDataSuccess {
-            
             let ratePENtoUSD = penRate / usdRate
-                    
             buy = String(format: "%.2f", ratePENtoUSD)
             sell = String(format: "%.2f", ratePENtoUSD + 0.03)
-            
         }
-        
         return (buy, sell)
     }
     
     func showError() {
-        
         guard let view = self.view else {
             return
         }
@@ -103,5 +100,4 @@ final class HomePresenter: HomePresenterProtocol, ObservableObject {
                              message: "Intentar nuevamente",
                              handler: view.reloadList)
     }
-    
 }

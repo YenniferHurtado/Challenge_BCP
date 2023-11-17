@@ -17,6 +17,26 @@
 		CE93F0AC2B059D2C00C6E7A7 /* UIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE93F0AB2B059D2C00C6E7A7 /* UIVIew+Extension.swift */; };
 		CE984D2D2B070FE8008F69C0 /* KeychainSwift+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE984D2C2B070FE8008F69C0 /* KeychainSwift+Extension.swift */; };
 		CE984D2F2B071413008F69C0 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE984D2E2B071413008F69C0 /* Alert.swift */; };
+		CE984D372B07B285008F69C0 /* ListCurrencyInteractorDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE984D312B07B285008F69C0 /* ListCurrencyInteractorDependencies.swift */; };
+		CE984D382B07B285008F69C0 /* ListCurrencyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE984D322B07B285008F69C0 /* ListCurrencyPresenter.swift */; };
+		CE984D392B07B285008F69C0 /* ListCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE984D332B07B285008F69C0 /* ListCurrencyViewController.swift */; };
+		CE984D3A2B07B285008F69C0 /* ListCurrencyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE984D342B07B285008F69C0 /* ListCurrencyInteractor.swift */; };
+		CE984D3B2B07B285008F69C0 /* ListCurrencyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE984D352B07B285008F69C0 /* ListCurrencyViewController.xib */; };
+		CE984D3C2B07B285008F69C0 /* ListCurrencyWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE984D362B07B285008F69C0 /* ListCurrencyWireFrame.swift */; };
+		CE984D432B07B43E008F69C0 /* BundleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE984D422B07B43E008F69C0 /* BundleTest.swift */; };
+		CE984D452B07B449008F69C0 /* CreateObjectList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE984D442B07B449008F69C0 /* CreateObjectList.swift */; };
+		CE984D482B07B520008F69C0 /* MockHomeInteractorDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE984D472B07B520008F69C0 /* MockHomeInteractorDependencies.swift */; };
+		CE984D492B07B5C4008F69C0 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BFC62B05C7EE00569768 /* RequestError.swift */; };
+		CE984D4A2B07B5D1008F69C0 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BFC02B05C7C500569768 /* Feed.swift */; };
+		CE984D4B2B07B654008F69C0 /* HomeInteractorDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA39F6E2B0588DE007CBC9A /* HomeInteractorDependencies.swift */; };
+		CE984D4D2B07B678008F69C0 /* HomeInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE984D4C2B07B678008F69C0 /* HomeInteractorTests.swift */; };
+		CE984D4F2B07B68E008F69C0 /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE984D4E2B07B68E008F69C0 /* HomePresenterTests.swift */; };
+		CE984D502B07B6EB008F69C0 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA39F712B0588DE007CBC9A /* HomeInteractor.swift */; };
+		CE984D512B07B762008F69C0 /* KeychainSwift+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE984D2C2B070FE8008F69C0 /* KeychainSwift+Extension.swift */; };
+		CE984D522B07B8DD008F69C0 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BFC22B05C7D100569768 /* RequestMethod.swift */; };
+		CE984D532B07B8DF008F69C0 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BFC42B05C7E000569768 /* RequestProtocol.swift */; };
+		CE984D542B07B8E2008F69C0 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BFBE2B05C7BE00569768 /* Endpoint.swift */; };
+		CE984D552B07B94D008F69C0 /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BFD42B06586500569768 /* HomeEntity.swift */; };
 		CEA016EE2B05943100567E83 /* UIVIewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA016ED2B05943100567E83 /* UIVIewController+Extension.swift */; };
 		CEA016F82B05944D00567E83 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA016F22B05944D00567E83 /* SplashViewController.swift */; };
 		CEA016FA2B05944D00567E83 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA016F42B05944D00567E83 /* SplashViewController.xib */; };
@@ -74,6 +94,18 @@
 		CE93F0AB2B059D2C00C6E7A7 /* UIVIew+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+Extension.swift"; sourceTree = "<group>"; };
 		CE984D2C2B070FE8008F69C0 /* KeychainSwift+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeychainSwift+Extension.swift"; sourceTree = "<group>"; };
 		CE984D2E2B071413008F69C0 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		CE984D312B07B285008F69C0 /* ListCurrencyInteractorDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCurrencyInteractorDependencies.swift; sourceTree = "<group>"; };
+		CE984D322B07B285008F69C0 /* ListCurrencyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCurrencyPresenter.swift; sourceTree = "<group>"; };
+		CE984D332B07B285008F69C0 /* ListCurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCurrencyViewController.swift; sourceTree = "<group>"; };
+		CE984D342B07B285008F69C0 /* ListCurrencyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCurrencyInteractor.swift; sourceTree = "<group>"; };
+		CE984D352B07B285008F69C0 /* ListCurrencyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCurrencyViewController.xib; sourceTree = "<group>"; };
+		CE984D362B07B285008F69C0 /* ListCurrencyWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCurrencyWireFrame.swift; sourceTree = "<group>"; };
+		CE984D412B07B401008F69C0 /* elements.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = elements.json; sourceTree = "<group>"; };
+		CE984D422B07B43E008F69C0 /* BundleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleTest.swift; sourceTree = "<group>"; };
+		CE984D442B07B449008F69C0 /* CreateObjectList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateObjectList.swift; sourceTree = "<group>"; };
+		CE984D472B07B520008F69C0 /* MockHomeInteractorDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeInteractorDependencies.swift; sourceTree = "<group>"; };
+		CE984D4C2B07B678008F69C0 /* HomeInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorTests.swift; sourceTree = "<group>"; };
+		CE984D4E2B07B68E008F69C0 /* HomePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
 		CEA016ED2B05943100567E83 /* UIVIewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController+Extension.swift"; sourceTree = "<group>"; };
 		CEA016F22B05944D00567E83 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		CEA016F42B05944D00567E83 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
@@ -198,6 +230,53 @@
 			path = "KeychainSwift ";
 			sourceTree = "<group>";
 		};
+		CE984D302B07B270008F69C0 /* ListCurrency */ = {
+			isa = PBXGroup;
+			children = (
+				CE984D312B07B285008F69C0 /* ListCurrencyInteractorDependencies.swift */,
+				CE984D322B07B285008F69C0 /* ListCurrencyPresenter.swift */,
+				CE984D332B07B285008F69C0 /* ListCurrencyViewController.swift */,
+				CE984D342B07B285008F69C0 /* ListCurrencyInteractor.swift */,
+				CE984D352B07B285008F69C0 /* ListCurrencyViewController.xib */,
+				CE984D362B07B285008F69C0 /* ListCurrencyWireFrame.swift */,
+			);
+			path = ListCurrency;
+			sourceTree = "<group>";
+		};
+		CE984D3D2B07B3C9008F69C0 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				CE984D4C2B07B678008F69C0 /* HomeInteractorTests.swift */,
+				CE984D4E2B07B68E008F69C0 /* HomePresenterTests.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		CE984D3E2B07B3CE008F69C0 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				CE984D472B07B520008F69C0 /* MockHomeInteractorDependencies.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		CE984D3F2B07B3DD008F69C0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CE984D422B07B43E008F69C0 /* BundleTest.swift */,
+				CE984D442B07B449008F69C0 /* CreateObjectList.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CE984D402B07B3E5008F69C0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE984D412B07B401008F69C0 /* elements.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		CEA016EC2B05941D00567E83 /* UIVIewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +363,10 @@
 		CEA39F3F2B05871F007CBC9A /* ChallengeBCPTests */ = {
 			isa = PBXGroup;
 			children = (
+				CE984D402B07B3E5008F69C0 /* Resources */,
+				CE984D3F2B07B3DD008F69C0 /* Utilities */,
+				CE984D3E2B07B3CE008F69C0 /* Mocks */,
+				CE984D3D2B07B3C9008F69C0 /* Actions */,
 				CEA39F402B05871F007CBC9A /* ChallengeBCPTests.swift */,
 			);
 			path = ChallengeBCPTests;
@@ -328,6 +411,7 @@
 		CEA39F5C2B058885007CBC9A /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				CE984D302B07B270008F69C0 /* ListCurrency */,
 				CEA016EF2B05944200567E83 /* Splash */,
 				CEA39F5E2B05888E007CBC9A /* Home */,
 				CEA39F862B058901007CBC9A /* Currency */,
@@ -524,6 +608,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE984D3B2B07B285008F69C0 /* ListCurrencyViewController.xib in Resources */,
 				CEA39F362B05871F007CBC9A /* LaunchScreen.storyboard in Resources */,
 				CEA016FA2B05944D00567E83 /* SplashViewController.xib in Resources */,
 				CEA39F912B05890C007CBC9A /* CurrencyViewController.xib in Resources */,
@@ -602,17 +687,21 @@
 				CE984D2F2B071413008F69C0 /* Alert.swift in Sources */,
 				CEA016F82B05944D00567E83 /* SplashViewController.swift in Sources */,
 				CEA39F742B0588DE007CBC9A /* HomeInteractorDependencies.swift in Sources */,
+				CE984D372B07B285008F69C0 /* ListCurrencyInteractorDependencies.swift in Sources */,
 				CEA39F8E2B05890C007CBC9A /* CurrencyPresenter.swift in Sources */,
 				CEA39F772B0588DE007CBC9A /* HomeInteractor.swift in Sources */,
 				CE31BFC52B05C7E000569768 /* RequestProtocol.swift in Sources */,
 				CEA39F902B05890C007CBC9A /* CurrencyInteractor.swift in Sources */,
+				CE984D3C2B07B285008F69C0 /* ListCurrencyWireFrame.swift in Sources */,
 				CEA39F752B0588DE007CBC9A /* HomePresenter.swift in Sources */,
 				CE31BFC32B05C7D100569768 /* RequestMethod.swift in Sources */,
 				CEA39F8F2B05890C007CBC9A /* CurrencyViewController.swift in Sources */,
+				CE984D392B07B285008F69C0 /* ListCurrencyViewController.swift in Sources */,
 				CEA016EE2B05943100567E83 /* UIVIewController+Extension.swift in Sources */,
 				CE31BFBF2B05C7BE00569768 /* Endpoint.swift in Sources */,
 				CEA39F922B05890C007CBC9A /* CurrencyWireFrame.swift in Sources */,
 				CE31BFC72B05C7EE00569768 /* RequestError.swift in Sources */,
+				CE984D382B07B285008F69C0 /* ListCurrencyPresenter.swift in Sources */,
 				CEA016FB2B05944D00567E83 /* SplashWireFrame.swift in Sources */,
 				CE984D2D2B070FE8008F69C0 /* KeychainSwift+Extension.swift in Sources */,
 				CEA39F762B0588DE007CBC9A /* HomeViewController.swift in Sources */,
@@ -621,6 +710,7 @@
 				CEA39F8D2B05890C007CBC9A /* CurrencyInteractorDependencies.swift in Sources */,
 				CEA39F2C2B05871D007CBC9A /* SceneDelegate.swift in Sources */,
 				CE31BFC12B05C7C500569768 /* Feed.swift in Sources */,
+				CE984D3A2B07B285008F69C0 /* ListCurrencyInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,7 +718,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE984D522B07B8DD008F69C0 /* RequestMethod.swift in Sources */,
 				CEA39F412B05871F007CBC9A /* ChallengeBCPTests.swift in Sources */,
+				CE984D502B07B6EB008F69C0 /* HomeInteractor.swift in Sources */,
+				CE984D542B07B8E2008F69C0 /* Endpoint.swift in Sources */,
+				CE984D492B07B5C4008F69C0 /* RequestError.swift in Sources */,
+				CE984D4F2B07B68E008F69C0 /* HomePresenterTests.swift in Sources */,
+				CE984D512B07B762008F69C0 /* KeychainSwift+Extension.swift in Sources */,
+				CE984D4D2B07B678008F69C0 /* HomeInteractorTests.swift in Sources */,
+				CE984D4A2B07B5D1008F69C0 /* Feed.swift in Sources */,
+				CE984D4B2B07B654008F69C0 /* HomeInteractorDependencies.swift in Sources */,
+				CE984D432B07B43E008F69C0 /* BundleTest.swift in Sources */,
+				CE984D452B07B449008F69C0 /* CreateObjectList.swift in Sources */,
+				CE984D482B07B520008F69C0 /* MockHomeInteractorDependencies.swift in Sources */,
+				CE984D552B07B94D008F69C0 /* HomeEntity.swift in Sources */,
+				CE984D532B07B8DF008F69C0 /* RequestProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
