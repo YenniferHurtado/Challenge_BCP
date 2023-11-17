@@ -14,6 +14,7 @@
 		CE31BFC52B05C7E000569768 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BFC42B05C7E000569768 /* RequestProtocol.swift */; };
 		CE31BFC72B05C7EE00569768 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BFC62B05C7EE00569768 /* RequestError.swift */; };
 		CE31BFD52B06586500569768 /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BFD42B06586500569768 /* HomeEntity.swift */; };
+		CE7F0D2C2B07C3E1009EA869 /* elements.json in Resources */ = {isa = PBXBuildFile; fileRef = CE984D412B07B401008F69C0 /* elements.json */; };
 		CE93F0AC2B059D2C00C6E7A7 /* UIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE93F0AB2B059D2C00C6E7A7 /* UIVIew+Extension.swift */; };
 		CE984D2D2B070FE8008F69C0 /* KeychainSwift+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE984D2C2B070FE8008F69C0 /* KeychainSwift+Extension.swift */; };
 		CE984D2F2B071413008F69C0 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE984D2E2B071413008F69C0 /* Alert.swift */; };
@@ -622,6 +623,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7F0D2C2B07C3E1009EA869 /* elements.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,7 @@ struct CreateObjectList {
     static var mockItems: HomeEntity {
         let data = String.json(fromFile: "elements", bundle: BundleTest.bundleTest)
         let decoder = JSONDecoder()
+        print(data)
         let decodable  = try! decoder.decode(HomeEntity.self, from: data)
         return decodable
     }
