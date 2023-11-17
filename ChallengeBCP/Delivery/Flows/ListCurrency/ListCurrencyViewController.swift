@@ -1,19 +1,19 @@
 //
-//  LoginViewController.swift
+//  ListCurrencyViewController.swift
 //  ChallengeBCP
 //
-//  Created by Yennifer Hurtado Arce on 15/11/23.
+//  Created by Yennifer Hurtado Arce on 17/11/23.
 //  
 //
 
 
 import UIKit
 
-class SplashViewController: UIViewController {
+class ListCurrencyViewController: UIViewController {
     
-    private var presenter: SplashPresenter
+    private var presenter: ListCurrencyPresenter
     
-    init(presenter: SplashPresenter) {
+    init(presenter: ListCurrencyPresenter) {
         self.presenter = presenter
         super.init(nibName: String(describing: type(of: self)), bundle: nil)
     }

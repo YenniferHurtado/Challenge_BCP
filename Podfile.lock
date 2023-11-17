@@ -1,20 +1,24 @@
 PODS:
+  - KeychainSwift (20.0.0)
   - MBProgressHUD (1.2.0)
   - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
+  - KeychainSwift
   - MBProgressHUD
   - SwiftyJSON
 
 SPEC REPOS:
   trunk:
+    - KeychainSwift
     - MBProgressHUD
     - SwiftyJSON
 
 SPEC CHECKSUMS:
+  KeychainSwift: 0ce6a4d13f7228054d1a71bb1b500448fb2ab837
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 88ef712dd26c1a7344b2890ca264dca988c6d6b7
+PODFILE CHECKSUM: 73c15c012851bef96a371a0744c70ff2983a9133
 
 COCOAPODS: 1.12.1

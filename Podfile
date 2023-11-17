@@ -4,6 +4,7 @@ inhibit_all_warnings!
 
 target 'ChallengeBCP' do
   pod 'MBProgressHUD'
+  pod 'KeychainSwift'
   pod 'SwiftyJSON'
 end
 
