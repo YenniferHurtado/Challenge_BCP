@@ -15,6 +15,7 @@
                 <outlet property="penButton" destination="Jwo-b5-gpX" id="tsK-GP-Zc7"/>
                 <outlet property="receiveTextfield" destination="zaE-fB-bQY" id="Jhe-yW-GzH"/>
                 <outlet property="receiveView" destination="CxQ-CZ-KYe" id="Cqy-VD-dal"/>
+                <outlet property="resultLabel" destination="oHI-PG-DoR" id="c3h-cO-wgx"/>
                 <outlet property="sendTextfield" destination="lav-Il-9JX" id="lux-DV-qCx"/>
                 <outlet property="sendView" destination="roL-Tl-TJo" id="Tft-Z7-O9T"/>
                 <outlet property="usdButton" destination="HQm-Mj-scI" id="twI-ea-Zob"/>
@@ -142,11 +143,14 @@
                     <buttonConfiguration key="configuration" style="plain" title="Empieza tu operación">
                         <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="diidTapChangeCurrency:" destination="-1" eventType="touchUpInside" id="9sa-HZ-DW4"/>
+                    </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHI-PG-DoR">
-                    <rect key="frame" x="107" y="567" width="200" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHI-PG-DoR">
+                    <rect key="frame" x="82" y="567" width="250" height="20.5"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="200" id="4Uc-6z-Cdw"/>
+                        <constraint firstAttribute="width" constant="250" id="4Uc-6z-Cdw"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
@@ -188,7 +192,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

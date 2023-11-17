@@ -20,27 +20,55 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var receiveTextfield: UITextField!
     @IBOutlet weak var sendTextfield: UITextField!
     
+    @IBOutlet weak var resultLabel: UILabel!
+    
     private var presenter: HomePresenter
+    private var isDataSuccess: Bool =  false
     
     init(presenter: HomePresenter) {
         self.presenter = presenter
         super.init(nibName: String(describing: type(of: self)), bundle: nil)
     }
     
-    override func viewDidLoad() {
-        presenter.listedRates { isSuccess in
-            print(isSuccess)
-        }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        listedRates()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    @IBAction func didTapChangeCurrency(_ sender: Any) {
-        
+    @IBAction func diidTapChangeCurrency(_ sender: Any) {
+        presenter.convertCurreny(sendText: sendTextfield.text,
+                                 receiveText: &receiveTextfield.text)
     }
-    
+
 }
 
+//MARK: FUNCTIONS
+extension HomeViewController {
+    
+    func buySellLabel() {
+        let (buy, sell) = presenter.showUSDrates(isDataSuccess: isDataSuccess)
+        resultLabel.text = "Compra: \(buy) | Venta: \(sell)"
+    }
+
+
+    func listedRates() {
+        presenter.listedRates {  [weak self] isSuccess in
+            guard let self = self else { return }
+            if isSuccess {
+                self.isDataSuccess = true
+                buySellLabel()
+            } else {
+                presenter.showError()
+            }
+        }
+    }
+    
+    @objc func reloadList(_ sender: UIAlertAction) {
+        listedRates()
+    }
+}
 
