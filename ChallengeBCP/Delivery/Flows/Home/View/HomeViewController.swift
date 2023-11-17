@@ -28,8 +28,9 @@ class HomeViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        addSubView()
-        setupUI()
+        presenter.listedRates { isSuccess in
+            print(isSuccess)
+        }
     }
     
     required init?(coder: NSCoder) {
@@ -42,16 +43,4 @@ class HomeViewController: UIViewController {
     
 }
 
-//MARK: UIView
-extension HomeViewController {
-    
-    func setupUI() {
 
-    }
-    
-    func addSubView() {
-
-        
-    }
-    
-}
